@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK2-SIGN_UP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js".js" defer></script>
+</head>
+<body style="text-align: center;height: 100%;">
+    <h1>Sign-Up Page</h1>
+    <div class="signup">
+        <form action="sign-in.html" method="post" onsubmit="storeDetails()">
+            <table  cellpadding="20" >
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" required><br>
+                    </td>
+                </tr>                
+                <tr>
+                    <td>
+                        <button type="submit" id="submit">Submit</button><br><br><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div><br><br><br>
+    <button type="button" class="btn"><a href="sign-in.html">Sign-In</a></button>
+</body>
+</html>

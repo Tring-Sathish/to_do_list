@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SIGN_IN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body style="text-align: center;height: 100%;">
+    <h1>Sign-In page</h1><br>
+    <div class="signin">
+        <form action="to_do_list.html" method="get" onsubmit="checkDetails()">
+            <table style="margin: auto;" cellpadding="20">
+                <tr>
+                    <td>
+                        <label for="name">User Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" required><br>
+                    </td>
+                </tr>
+            <tr>
+                <td>
+                    <button type="submit" id="submit">Sign In</button><br><br><br><br><br>
+                </td>
+            </tr>        
+            </table>
+        </form>     
+    </div><br><br><br>
+    <button type="button" class="btn"><a href="sign-in.html">Sign Up</a></button>
+    </body>
+</html>

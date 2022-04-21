@@ -1,0 +1,122 @@
+body{
+    display: flex;;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+    background-color: rgb(172, 243, 237);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signup{
+    border: 2px solid;
+    margin: auto;
+    width: 30%;
+    background-color: rgb(119, 119, 241);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signin{
+    border: 2px solid;
+    margin: auto;
+    width:30%;
+    background-color: rgb(119, 119, 241);
+    font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    margin: 0;
+    border: none;
+    border-radius: 10;
+    width: 60%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    border-radius: 20px;
+}
+#addList {
+    padding: 10px;
+    width: 15%;
+    background: #04eeff;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+.addlist:hover {
+    background-color: #bbb;
+}
+.btn{
+    font-size: large;
+    position: relative;
+    align-items: center;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    line-height: 10px;
+}
+.btn:hover{
+    background-color: #bbb;
+}
+#option{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    top: auto;
+    line-height: 15px;
+    border-spacing: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 30px;
+    background: #04eeff;
+}
+#submit{  
+    position: relative;
+    left: 125px;
+    top: 25px;
+    align-items: center;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    line-height: 10px;
+}
+#submit:hover{
+    background-color: #bbb;
+}
+.createList{
+    padding: 20px;
+}
+.options{
+    padding-top: 50px;
+}
+.completed{
+    background-color: #e8f796;
+    text-decoration: line-through;
+}
+.label{
+    display:inline-block;
+    width:40%;
+}
+.todolist{
+    border: 2px solid;
+    margin: auto;
+    width:40%;
+    background-color: #ff7357bd;
+    line-height: 20px;
+}
+.close {
+    float:right;
+  }
+  
+.close:hover {
+    background-color: #14e1f0;
+    color: rgb(9, 26, 255);
+  }
+.showlist{
+    font-size: large;
+    background-color: blue;
+}
+.field{
+    font-size: larger;
+}
+#mylist{
+    background-color: #04eeff;
+}
+  
