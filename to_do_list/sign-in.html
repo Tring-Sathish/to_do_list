@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+    <style>
+        th, caption {
+            display: none;
+        }
+    </style>
 <body style="text-align: center;height: 100%;">
     <h1>Sign-In page</h1><br>
     <div class="signin">
         <form action="to_do_list.html" method="get" onsubmit="checkDetails()">
-            <table style="margin: auto;" cellpadding="20">
+            <table style="margin: auto;">
+                <caption></caption>
+                <th></th>
                 <tr>
                     <td>
                         <label for="name">User Name:</label>
