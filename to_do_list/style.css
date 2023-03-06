@@ -1,5 +1,5 @@
 body{
-    display: flex;;
+    display: flex;
     align-items: center;
     flex-direction: column;
     font-size: larger;
@@ -23,7 +23,6 @@ body{
 input {
     margin: 0;
     border: none;
-    border-radius: 10;
     width: 60%;
     padding: 10px;
     float: left;
