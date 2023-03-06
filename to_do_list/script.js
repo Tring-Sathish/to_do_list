@@ -33,7 +33,6 @@ function addList(){
     let text = document.getElementById("newList").value;
     document.getElementById("newList").value = ""
     let list = document.createElement("li");
-    let span = document.createElement("span");
     list.innerHTML=text;
     list.className = "l";
     list.addEventListener('click', function(){
@@ -52,7 +51,6 @@ createList[i].appendChild(span);
 }
 
 let close = document.getElementsByClassName("close");
-let i;
 for (i = 0; i < close.length; i++) {
 close[i].onclick = function() {
     let div = this.parentElement;
