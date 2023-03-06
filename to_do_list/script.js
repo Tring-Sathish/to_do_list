@@ -2,7 +2,7 @@ function storeDetails(){
     let name = document.getElementById("name").value;
     let password = document.getElementById("password").value;
     if(password.value !== ""){
-        var details = {
+        let details = {
             "name": name,
             "password": password
         };
@@ -13,7 +13,7 @@ function storeDetails(){
 function checkDetails(){
     let name = document.getElementById("name").value;
     let password = document.getElementById("password").value;
-    var details = JSON.parse(localStorage.getItem("details"));
+    let details = JSON.parse(localStorage.getItem("details"));
      if(!details)
      {
          alert("User is not registered here ");
@@ -29,11 +29,11 @@ function checkDetails(){
     }
 }
 function addList(){
-    var myList = document.getElementById("myList");
-    var text = document.getElementById("newList").value;
+    let myList = document.getElementById("myList");
+    let text = document.getElementById("newList").value;
     document.getElementById("newList").value = ""
-    var list = document.createElement("li");
-    var span = document.createElement("span");
+    let list = document.createElement("li");
+    let span = document.createElement("span");
     list.innerHTML=text;
     list.className = "l";
     list.addEventListener('click', function(){
@@ -41,35 +41,35 @@ function addList(){
     })
     myList.appendChild(list);
 }
-var createList = document.getElementsByTagName("LI");
-var i;
+let createList = document.getElementsByTagName("LI");
+let i;
 for (i = 0; i < createList.length; i++) {
-var span = document.createElement("SPAN");
-var txt = document.createTextNode("\u00D7");
+let span = document.createElement("SPAN");
+let txt = document.createTextNode("\u00D7");
 span.className = "close";
 span.appendChild(txt);
 createList[i].appendChild(span);
 }
 
-var close = document.getElementsByClassName("close");
-var i;
+let close = document.getElementsByClassName("close");
+let i;
 for (i = 0; i < close.length; i++) {
 close[i].onclick = function() {
-    var div = this.parentElement;
+    let div = this.parentElement;
     div.style.display = "none";
 }
 }
 function empty(){
-    var elements = document.querySelectorAll(".l");
-    for(var x of elements){
+    let elements = document.querySelectorAll(".l");
+    for(let x of elements){
         x.remove();
     }
 }
 function save(){
-    var saveList = document.getElementById("myList").innerHTML;
+    let saveList = document.getElementById("myList").innerHTML;
     localStorage.setItem("saveList", JSON.stringify(saveList));    
 }
 function showSavedList(){
-    var savedList = localStorage.getItem("saveList");
+    let savedList = localStorage.getItem("saveList");
     document.getElementById("myList") = JSON.parse(savedList);
 }
